@@ -3,7 +3,7 @@
 
 This repository contains a script that creates automated excel reports using the API of Cloudability. It includes the recommendations to rightsize or terminate EC2, RDS, S3 and EBS resources.
 
-Note: The module is found under `finops-report-automation`. The code was copied over to this brand new repository from a private repository to eliminate every possible chance to have wrongly tracked a confidential file.
+**Note**: The module is found under `finops-report-automation`. The code was copied over to this brand new repository from a private repository to eliminate every possible chance to have wrongly tracked a confidential file.
 
 ## Installation
 
