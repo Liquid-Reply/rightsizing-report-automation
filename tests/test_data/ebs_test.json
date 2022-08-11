@@ -1,0 +1,186 @@
+{
+  "product": "ebs",
+  "api_data": [
+    {
+      "service": "ebs-recs",
+      "name": "ebs_1",
+      "resourceIdentifier": "ebs_1",
+      "accountName": "account_1",
+      "vendorAccountId": "111111",
+      "tagMappings": [
+        {
+          "tag": "tag2",
+          "tagName": "Business Unit",
+          "vendorTagValue": "bu_unit_1"
+        },
+        {
+          "tag": "tag3",
+          "tagName": "Cost Center",
+          "vendorTagValue": "cost_center_1"
+        },
+        {
+          "tag": "tag4",
+          "tagName": "Environment",
+          "vendorTagValue": "on demand"
+        },
+        {
+          "tag": "tag5",
+          "tagName": "Project",
+          "vendorTagValue": "video"
+        }
+      ],
+      "availabilityZone": "eu-central-1b",
+      "region": "eu-central-1",
+      "currencyCode": "USD",
+      "totalSpend": 198.33,
+      "idle": 100,
+      "lastSeen": "2022-04-10T18:00:00Z",
+      "volumeType": "gp2",
+      "state": "Attached",
+      "volumeSize": 5000,
+      "iops": 15000,
+      "throughput": 250,
+      "lastAttachedTime": "2022-04-10T07:00:00Z",
+      "lastAttachedId": "xxxxxx",
+      "unitPrice": 0.12,
+      "recommendations": [
+        {
+          "action": "Rightsize",
+          "preferenceOrder": 1,
+          "rank": 1,
+          "risk": 0,
+          "savingsPct": 85,
+          "savings": 168.33,
+          "volumeType": "sc1",
+          "volumeSize": 5000,
+          "iops": 250,
+          "throughput": 60,
+          "throughputRisk": 0,
+          "iopsRisk": 0,
+          "throughputRatio": 0.24,
+          "iopsRatio": 0.02,
+          "unitPrice": 0.02
+        }
+      ]
+    },
+    {
+      "service": "ebs-recs",
+      "name": "ebs_2",
+      "resourceIdentifier": "ebs_2",
+      "accountName": "account_2",
+      "vendorAccountId": "222222",
+      "tagMappings": [
+        {
+          "tag": "tag2",
+          "tagName": "Business Unit",
+          "vendorTagValue": "bu_1"
+        },
+        {
+          "tag": "tag3",
+          "tagName": "Cost Center",
+          "vendorTagValue": "cost_center_1"
+        },
+        {
+          "tag": "tag4",
+          "tagName": "Environment",
+          "vendorTagValue": "on demand"
+        },
+        {
+          "tag": "tag5",
+          "tagName": "Project",
+          "vendorTagValue": "video"
+        }
+      ],
+      "availabilityZone": "eu-central-1b",
+      "region": "eu-central-1",
+      "currencyCode": "USD",
+      "totalSpend": 198.33,
+      "idle": 100,
+      "lastSeen": "2022-04-10T07:00:00Z",
+      "volumeType": "gp2",
+      "state": "Attached",
+      "volumeSize": 5000,
+      "iops": 15000,
+      "throughput": 250,
+      "lastAttachedTime": "2022-04-10T07:00:00Z",
+      "lastAttachedId": "xxxxxx",
+      "unitPrice": 0.12,
+      "recommendations": [
+        {
+          "action": "Terminate",
+          "preferenceOrder": 1,
+          "rank": 1,
+          "risk": 0,
+          "savingsPct": 85,
+          "savings": 168.33,
+          "volumeType": "sc1",
+          "volumeSize": 5000,
+          "iops": 250,
+          "throughput": 60,
+          "throughputRisk": 0,
+          "iopsRisk": 0,
+          "throughputRatio": 0.24,
+          "iopsRatio": 0.02,
+          "unitPrice": 0.02
+        }
+      ]
+    }
+  ],
+  "account_ids": [
+    "111111",
+    "222222"
+  ],
+  "account_details": [
+    {
+      "id": "111111",
+      "vendorAccountName": "account_1",
+      "vendorAccountId": "111111",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    },
+    {
+      "id": "222222",
+      "vendorAccountName": "account_2",
+      "vendorAccountId": "222222",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    },
+    {
+      "id": "123456789",
+      "vendorAccountName": "account_xxx",
+      "vendorAccountId": "123456789",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    }
+  ]
+}

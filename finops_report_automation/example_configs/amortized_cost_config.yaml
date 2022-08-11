@@ -1,0 +1,10 @@
+# This file serves as an example config for the amortized cost data that can be retrieved from CloudAbility.
+
+dimensions: "vendor_account_identifier"
+end: ""
+limit: 0
+metrics: "total_amortized_cost"
+sort: "total_amortized_costDESC"
+start: ""
+viewId: 0
+widgetType: "table"

@@ -1,0 +1,122 @@
+# This file serves as an example config for the data that can be retrieved from CloudAbility. 
+# For more information take a look at the official Clouddability API documentation at 
+# https://help.apptio.com/en-us/cloudability/api/v3/rightsizing_end_points.htm
+
+# Your real config file should be in your $CONFIG_PATH
+
+# The resource you want to create a report for: EC2, EBS, S3, RDS
+product: "ec2"
+
+# Cost basis used, either on-demand or effective.
+basis: effective
+
+# Filter for a list of vendor accounts, an empty list includes all accounts.
+vendorAccountIds: []
+
+# The number of the View
+ViewId: 0
+
+# Sort the resources based on an attribute of your choice.
+sort: "-recommendations.savings"
+
+# Set a maximum number of recommendations to be delivered with each resource.
+maxRecsPerResource: 1
+
+# Lookback period in days, either ten-day or thirty-day
+duration: "ten-day"
+
+# Filter the resources based on an attribute of your choice.
+filters: "recommendations.defaultsOrder==1,recommendations.savings>=50"
+
+---
+# The resource you want to create a report for: EC2, EBS, S3, RDS
+product: s3
+
+# Cost basis used, either on-demand or effective.
+basis: on-demand
+
+# Filter for a list of vendor accounts, an empty list includes all accounts.
+vendorAccountIds: []
+
+# The number of the View
+viewId: 0
+
+# Sort the resources based on an attribute of your choice.
+sort: "-recommendations.savings"
+
+# Set a maximum number of recommendations to be delivered with each resource.
+maxRecsPerResource: 1
+
+# Lookback period in days, either ten-day or thirty-day
+duration: thirty-day
+
+# Filter the resources based on an attribute of your choice.
+filters: "recommendations.rank==1,recommendations.savings>=50"
+
+# Used together with offset to provide pagination.
+limit: 100
+
+# Used together with limit to provide pagination.
+offset: 0
+
+---
+# The resource you want to create a report for: EC2, EBS, S3, RDS
+product: ebs
+
+# Cost basis used, either on-demand or effective.
+basis: on-demand
+
+# Filter for a list of vendor accounts, an empty list includes all accounts.
+vendorAccountIds: []
+
+# The number of the View
+viewId: 0
+
+# Sort the resources based on an attribute of your choice.
+sort: "-recommendations.savings"
+
+# Set a maximum number of recommendations to be delivered with each resource.
+maxRecsPerResource: 1
+
+# Lookback period in days, either ten-day or thirty-day
+duration: ten-day
+
+# Filter the resources based on an attribute of your choice.
+filters: "recommendations.rank==1,recommendations.savings>=50"
+
+# Used together with offset to provide pagination.
+limit: 100
+
+# Used together with offset to provide pagination.
+offset: 0
+
+---
+# The resource you want to create a report for: EC2, EBS, S3, RDS
+product: rds
+
+# Cost basis used, either on-demand or effective.
+basis: effective
+
+# Filter for a list of vendor accounts, an empty list includes all accounts.
+vendorAccountIds: []
+
+# The number of the View
+viewId: 0
+
+# Sort the resources based on an attribute of your choice.
+sort: "-topSavings"
+
+# Set a maximum number of recommendations to be delivered with each resource.
+maxRecsPerResource: 1
+
+# Lookback period in days, either ten-day or thirty-day
+duration: ten-day
+
+# Filter the resources based on an attribute of your choice.
+filters: "recommendations.preferenceOrder==1,topSavings>=50"
+
+# Used together with offset to provide pagination.
+limit: 100
+
+# Used together with limit to provide pagination.
+offset: 0

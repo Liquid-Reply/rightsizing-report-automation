@@ -1,0 +1,220 @@
+{
+  "product": "ec2",
+  "api_data": [
+    {
+      "service": "ec2-recs",
+      "name": "ec2_instance_1",
+      "resourceIdentifier": "ec2_instance_1",
+      "vendorAccountId": "111111",
+      "tagMappings": [
+        {
+          "tag": "tag4",
+          "tagName": "Environment",
+          "vendorTagValue": "platform"
+        }
+      ],
+      "availabilityZone": "eu-central-1b",
+      "provider": "NATIVE",
+      "currencyCode": "USD",
+      "region": "eu-central-1",
+      "os": "Linux",
+      "nodeType": "p3.2xlarge",
+      "instanceFamily": "p3",
+      "unitPrice": 3,
+      "totalSpend": 720.72,
+      "idle": 100,
+      "localCapacity": -1,
+      "localDrives": -1,
+      "cpuCapacity": 8,
+      "memoryCapacity": 61,
+      "networkCapacity": 10000,
+      "gpuCapacity": 1,
+      "gpuMemoryCapacity": 16,
+      "lastSeen": "2022-04-10T23:00:00Z",
+      "tenancy": "N/A",
+      "hoursRunning": 240,
+      "cpuMax": 2,
+      "memoryMax": "N/A",
+      "gpuMax": "N/A",
+      "gpuMemoryMax": "N/A",
+      "recommendations": [
+        {
+          "action": "Rightsize",
+          "preferenceOrder": 1,
+          "defaultsOrder": 1,
+          "nodeType": "t3a.micro",
+          "instanceFamily": "t3a",
+          "localCapacity": -1,
+          "localDrives": -1,
+          "cpuCapacity": 0.2,
+          "memoryCapacity": 1,
+          "networkCapacity": 5000,
+          "gpuCapacity": 0,
+          "gpuMemoryCapacity": 0,
+          "previousGenTarget": false,
+          "currentGen": true,
+          "sameMemory": false,
+          "sameFamily": false,
+          "unitPrice": 0.01,
+          "cpuRatio": 0.03,
+          "memoryRatio": 0.02,
+          "diskXPutCapacity": 160,
+          "networkRatio": 0.5,
+          "gpuRatio": 0,
+          "gpuMemoryRatio": 0,
+          "cpuRisk": 0,
+          "memoryRisk": 0,
+          "diskRisk": 0,
+          "networkRisk": 0,
+          "risk": 0,
+          "savingsPct": 100,
+          "savings": 718.13,
+          "inDefaults": false,
+          "memoryFit": false,
+          "persistentStorageAdded": false,
+          "maxInstances": 1,
+          "minInstances": 1
+        }
+      ],
+      "defaultSameFamily": true,
+      "defaultCurrentGen": true,
+      "defaultMemoryFit": true
+    },
+    {
+      "service": "ec2-recs",
+      "name": "ec2_instance_2",
+      "resourceIdentifier": "ec2_instance_2",
+      "vendorAccountId": "222222",
+      "tagMappings": [
+        {
+          "tag": "tag4",
+          "tagName": "Environment",
+          "vendorTagValue": "platform"
+        }
+      ],
+      "availabilityZone": "eu-central-1a",
+      "provider": "NATIVE",
+      "currencyCode": "USD",
+      "region": "eu-central-1",
+      "os": "Linux",
+      "nodeType": "p3.2xlarge",
+      "instanceFamily": "p3",
+      "unitPrice": 3,
+      "totalSpend": 720.72,
+      "idle": 100,
+      "localCapacity": -1,
+      "localDrives": -1,
+      "cpuCapacity": 8,
+      "memoryCapacity": 61,
+      "networkCapacity": 10000,
+      "gpuCapacity": 1,
+      "gpuMemoryCapacity": 16,
+      "lastSeen": "2022-04-10T23:00:00Z",
+      "tenancy": "N/A",
+      "hoursRunning": 240,
+      "cpuMax": 2,
+      "memoryMax": "N/A",
+      "gpuMax": "N/A",
+      "gpuMemoryMax": "N/A",
+      "recommendations": [
+        {
+          "action": "Terminate",
+          "preferenceOrder": 1,
+          "defaultsOrder": 1,
+          "nodeType": "t3a.micro",
+          "instanceFamily": "t3a",
+          "localCapacity": -1,
+          "localDrives": -1,
+          "cpuCapacity": 0.2,
+          "memoryCapacity": 1,
+          "networkCapacity": 5000,
+          "gpuCapacity": 0,
+          "gpuMemoryCapacity": 0,
+          "previousGenTarget": false,
+          "currentGen": true,
+          "sameMemory": false,
+          "sameFamily": false,
+          "unitPrice": 0.01,
+          "cpuRatio": 0.03,
+          "memoryRatio": 0.02,
+          "diskXPutCapacity": 160,
+          "networkRatio": 0.5,
+          "gpuRatio": 0,
+          "gpuMemoryRatio": 0,
+          "cpuRisk": 0,
+          "memoryRisk": 0,
+          "diskRisk": 0,
+          "networkRisk": 0,
+          "risk": 0,
+          "savingsPct": 100,
+          "savings": 718.13,
+          "inDefaults": false,
+          "memoryFit": false,
+          "persistentStorageAdded": false,
+          "maxInstances": 1,
+          "minInstances": 1
+        }
+      ],
+      "defaultSameFamily": true,
+      "defaultCurrentGen": true,
+      "defaultMemoryFit": true
+    } 
+  ],
+  "account_ids": [
+    "111111",
+    "222222"
+  ],
+  "account_details": [
+    {
+      "id": "111111",
+      "vendorAccountName": "account_1",
+      "vendorAccountId": "111111",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    },
+    {
+      "id": "222222",
+      "vendorAccountName": "account_2",
+      "vendorAccountId": "222222",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    },
+    {
+      "id": "123456789",
+      "vendorAccountName": "account_xxx",
+      "vendorAccountId": "123456789",
+      "vendorKey": "aws",
+      "verification": {
+        "state": "verified",
+        "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+      },
+      "authorization": {
+        "type": "aws_role",
+        "roleName": "CloudabilityRole",
+        "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+      },
+      "createdAt": "2022-02-10T15: 17: 04Z",
+      "parentAccountId": "987654321"
+    }
+  ]
+}

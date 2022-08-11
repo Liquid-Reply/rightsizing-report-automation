@@ -1,0 +1,155 @@
+{
+    "name": "testProject",
+    "account_ids": [
+        "111111",
+        "222222"
+    ],
+    "amortized_cost": [
+        {
+            "dimensions": [
+                "111111"
+            ],
+            "metrics": [
+                {
+                    "count": "53124",
+                    "max": "8655.74",
+                    "min": "-733.071364",
+                    "sum": "1000.1"
+                }
+            ]
+        },
+        {
+            "dimensions": [
+                "222222"
+            ],
+            "metrics": [
+                {
+                    "count": "15632",
+                    "max": "5496.76",
+                    "min": "-259.52256",
+                    "sum": "2000.2"
+                }
+            ]
+        }
+    ],
+    "resources":{
+        "product": "s3",
+        "api_data": [
+          {
+            "service": "s3-recs",
+            "name": "s3_bucket_1",
+            "resourceIdentifier": "s3_bucket_1",
+            "vendorAccountId": "111111",
+            "provider": "NATIVE",
+            "currencyCode": "USD",
+            "region": "us-east-1",
+            "resourceType": "STANDARD",
+            "bucketSizeBytes": 16237750044596,
+            "numberOfObjects": 2726977,
+            "requests": 2355,
+            "totalSpend": 334.45,
+            "hoursRunning": 720,
+            "idle": 99,
+            "lastSeen": "2022-04-10T17:00:00Z",
+            "tagMappings": [],
+            "recommendations": [
+              {
+                "action": "Rightsize",
+                "resourceType": "INTELLIGENT_TIERING",
+                "preferenceOrder": 1,
+                "rank": 1,
+                "savingsPct": 42,
+                "savings": 141.43,
+                "risk": 1
+              }
+            ]
+          },
+          {
+            "service": "s3-recs",
+            "name": "s3_bucket_2",
+            "resourceIdentifier": "s3_bucket_2",
+            "vendorAccountId": "222222",
+            "provider": "NATIVE",
+            "currencyCode": "USD",
+            "region": "us-east-1",
+            "resourceType": "STANDARD",
+            "bucketSizeBytes": 32518228363442,
+            "numberOfObjects": 79806,
+            "requests": 2390,
+            "totalSpend": 631.39,
+            "hoursRunning": 720,
+            "idle": 97,
+            "lastSeen": "2022-04-10T17:00:00Z",
+            "tagMappings": [],
+            "recommendations": [
+              {
+                "action": "Terminate",
+                "resourceType": "INTELLIGENT_TIERING",
+                "preferenceOrder": 1,
+                "rank": 1,
+                "savingsPct": 38,
+                "savings": 240.1,
+                "risk": 1
+              }
+            ]
+          }
+        ],
+        "account_ids": [
+          "111111",
+          "222222"
+        ],
+        "account_details": [
+          {
+            "id": "111111",
+            "vendorAccountName": "account_1",
+            "vendorAccountId": "111111",
+            "vendorKey": "aws",
+            "verification": {
+              "state": "verified",
+              "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+            },
+            "authorization": {
+              "type": "aws_role",
+              "roleName": "CloudabilityRole",
+              "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+            },
+            "createdAt": "2022-02-10T15: 17: 04Z",
+            "parentAccountId": "987654321"
+          },
+          {
+            "id": "222222",
+            "vendorAccountName": "account_2",
+            "vendorAccountId": "222222",
+            "vendorKey": "aws",
+            "verification": {
+              "state": "verified",
+              "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+            },
+            "authorization": {
+              "type": "aws_role",
+              "roleName": "CloudabilityRole",
+              "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+            },
+            "createdAt": "2022-02-10T15: 17: 04Z",
+            "parentAccountId": "987654321"
+          },
+          {
+            "id": "123456789",
+            "vendorAccountName": "account_xxx",
+            "vendorAccountId": "123456789",
+            "vendorKey": "aws",
+            "verification": {
+              "state": "verified",
+              "lastVerificationAttemptedAt": "2022-04-12T01: 42: 08Z"
+            },
+            "authorization": {
+              "type": "aws_role",
+              "roleName": "CloudabilityRole",
+              "externalId": "d110c800-1293-472f-b19a-e6f31ff53c60"
+            },
+            "createdAt": "2022-02-10T15: 17: 04Z",
+            "parentAccountId": "987654321"
+          }
+        ]
+      }    
+}
