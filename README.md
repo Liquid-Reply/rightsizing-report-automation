@@ -80,7 +80,7 @@ The folder structure will be as follows:
 │   ├── 12
 ```
 
-To run the container we propose Amazon ECS + Fargate. In contrast to AWS Lambda we don't have to alter application code to run it. This also means we can still run the container locally. With the AWS SDK we can still other AWS services like S3.
+To run the container we propose Amazon ECS + Fargate. In contrast to AWS Lambda we don't have to alter application code to run it. This also means we can still run the container locally. With the AWS SDK we can use other AWS services like S3.
 
 ### Configuration
 
@@ -89,7 +89,7 @@ Prerequisite:
 - IAM role including two permission policies:
   - AmazonECSTaskExecutionRolePolicy
   - Policy with _s3:PutObject & s3:GetObject_ allowed on S3 bucket.
-  - An ECR
+- An ECR
 
 Go to Amazon ECS and create a task definition. Add your Image URI and the *API_KEY & BUCKET_NAME* environmental variables.
 For Task Role select your IAM role with ECS and S3 policies.
